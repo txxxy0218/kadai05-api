@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Map and Autocomplete Example</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=*****&libraries=places"></script>
+  <script type="module" src="script.js"></script> <!-- type="module" を追加 -->
+</head>
+<body>
+  <div id="autocomplete-container">
+    <div id="place-name" class="container">
+        <h4>Please indicate where you think it is dangerous</h4>
+        <input id="autocomplete-input" type="text" placeholder="Enter a place">
+    </div>
+    <div id="place-comment" class="container">
+        <h4>Why do you think the place is dangerous?</h4>
+        <textarea id="comment-input" rows="1" placeholder="Enter additional information"></textarea>
+    </div>
+    
+    <button id="save-button">Save</button>
+  </div>
+  <div id="map"></div>
+
+<!-- Ajax読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
